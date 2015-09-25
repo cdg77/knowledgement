@@ -1,7 +1,9 @@
 <h1>Welcome to the Knowledgement Homepage</h1>
 
-<ul>
-  {{#each model as |question|}}
-    <li>{{question.author}} ask's: <br> {{question.question}} <br> note: {{question.note}} <hr> </li>
-  {{/each}}
-</ul>
+<div class="well">
+  <ul>
+    {{#each model as |question|}}
+      {{question-tile question = question}}
+    {{/each}}
+  </ul>
+</div>

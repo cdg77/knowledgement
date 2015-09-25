@@ -1,0 +1,20 @@
+hr {
+  height: .2em;
+  background: #05A2CE;
+}
+body {
+  background-color: #414141;
+  color: #A7A6A6;
+  font-family: fantasy;
+}
+
+.avatar-frame {
+  border: 2px solid #c7b89e;
+}
+.avatar-frame, .avatar-frame img {
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 30px; /* Saf3+, Chrome */
+	border-radius: 30px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+	}

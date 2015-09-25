@@ -1,0 +1,8 @@
+<li>{{question.author}} ask's: <br> {{question.question}} <br> note: {{question.note}}
+  {{#if isImageShowing }}
+    <p><img src={{question.image}} alt="" {{action 'imageHide'}} class="avatar-frame"/> </p>
+  {{else}}
+    <br> <button {{action 'imageShow'}} class="btn btn-primary">ShowImage</button>  <hr>
+  {{/if}}
+</li>
+<br>
