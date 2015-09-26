@@ -2,7 +2,8 @@
   {{#if isImageShowing }}
     <p><img src={{question.image}} alt="" {{action 'imageHide'}} class="avatar-frame"/> </p>
   {{else}}
-    <br> <button {{action 'imageShow'}} class="btn btn-primary">ShowImage</button>  <hr>
+    <br> <button {{action 'imageShow'}} class="btn btn-primary">ShowImage</button>
   {{/if}}
-</li>
+    <button {{action 'delete' question}} class="btn btn-primary">Delete</button>
+</li><hr>
 <br>
