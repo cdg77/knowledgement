@@ -4,6 +4,7 @@
   {{else}}
     <br> <button {{action 'imageShow'}} class="btn btn-primary">ShowImage</button>
   {{/if}}
-    <button {{action 'delete' question}} class="btn btn-primary">Delete</button>
+    {{update-question question=question update='update'}}
+    <button {{action 'delete' question}} class="btn btn-danger">Delete</button>
 </li><hr>
 <br>

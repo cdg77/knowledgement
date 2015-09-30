@@ -1,1 +1,40 @@
-{{yield}}
+{{#if updateQuestionForm}}
+  <h1>Update Knowledgement</h1>
+  <form class="form-horizontal" id="" action="" method="">
+    <fieldset>
+      <legend>Update {{question.author}}'s  question: </legend>
+      <div class="form-group">
+        <label for="author" class='col-lg-2 control-label'>Author</label>
+        <div class="col-lg-10">
+         {{input value=user id="author" class="form-control" placeholder="Earnest Hemmingway" }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="image" class='col-lg-2 control-label'>Avatar URL</label>
+        <div class="col-lg-10">
+         {{input value=image id="image" class="form-control" placeholder="http://image.jpg"}}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question" class="col-lg-2 control-label">Question:</label>
+        <div class="col-lg-10">
+          <!-- {{input value=question id="question"}} -->
+
+          {{textarea input value=question id="question" cols="80" rows="6" class="form-control" placeholder="what would you like to know about?"}}
+          <!-- <textarea class="form-control" rows="3" id="question">
+          </textarea> -->
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="note" class='col-lg-2 control-label'>Notes</label>
+        <div class="col-lg-10">
+         {{input value=note id="note" class="form-control" placeholder="notes"}}
+         <!-- <input type="text" class="form-control" id="inputUserName" placeholder="name"> -->
+        </div>
+      </div>
+      <button class="btn btn-default" {{action 'update' question}}>Save</button>
+    </fieldset>
+  </form>
+{{else}}
+  <button class="btn btn-warning" {{action 'updateQuestionFormShow'}}>Update Question</button>
+{{/if}}
