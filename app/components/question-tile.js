@@ -1,13 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  isImageShowing: false,
+  isQuestionShowing: false,
   actions: {
-    imageShow: function() {
-      this.set('isImageShowing', true);
+    questionShow: function() {
+      this.set('isQuestionShowing', true);
     },
-    imageHide: function() {
-      this.set('isImageShowing', false);
+    questionHide: function() {
+      this.set('isQuestionShowing', false);
     },
     update(question, params) {
       this.sendAction('update', question, params);

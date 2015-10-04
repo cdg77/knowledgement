@@ -1,0 +1,9 @@
+<img src={{question.image}} alt={{question.author}} class="avatar-frame-detail"/>
+{{question.author}} would like to know: <br><br>
+
+{{question.author}} also notes: <br><br>
+{{question.note}}
+
+{{update-question question=question update='update'}}
+
+<button {{action 'delete' question}} class="btn btn-danger">Delete</button>

@@ -1,10 +1,10 @@
-<li>{{question.author}} ask's: <br> {{question.question}} <br> note: {{question.note}}
-  {{#if isImageShowing }}
-    <p><img src={{question.image}} alt="" {{action 'imageHide'}} class="avatar-frame"/> </p>
+<li><p><img src={{question.image}} class="avatar-frame"/> </p>{{question.author}} Seeks Knowledgement<br>
+  {{#if isQuestionShowing }}
+    <h4 class="text-primary">{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</h4>
+    <button {{action 'questionHide'}} class="btn btn-default">HideQuestion</button>
   {{else}}
-    <br> <button {{action 'imageShow'}} class="btn btn-primary">ShowImage</button>
+    <br> <button {{action 'questionShow'}} class="btn btn-primary">ShowQuestion</button>
   {{/if}}
-    {{update-question question=question update='update'}}
-    <button {{action 'delete' question}} class="btn btn-danger">Delete</button>
+
 </li><hr>
 <br>

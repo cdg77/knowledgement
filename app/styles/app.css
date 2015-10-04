@@ -19,6 +19,14 @@ body {
 	border-radius: 30px; /* Opera 10.5, IE 9 */
 	/*-moz-border-radius: 30px;  Disabled for FF1+ */
 }
+.avatar-frame-detail {
+  border: 10px solid #c7b89e;
+  width: 200px;
+	height: 200px;
+	-webkit-border-radius: 30px; /* Saf3+, Chrome */
+	border-radius: 30px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+}
 
 div.well {
   background-image: url(images/riddler-e-coyote.png);

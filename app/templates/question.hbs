@@ -1,0 +1,8 @@
+<h2>{{model.author}} asks: </h2>
+
+<h3>{{model.question}} </h3>
+
+{{question-detail question=model}}
+{{update-question question=model update="update"}}
+
+<button {{action 'delete' question}} class='btn btn-danger'>Delete</button>
