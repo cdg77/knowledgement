@@ -6,3 +6,12 @@
 {{update-question question=model update="update"}}
 
 <button {{action 'delete' question}} class='btn btn-danger'>Delete</button>
+
+<h2>Answers</h2>
+<ul class='no-bull'>
+  {{#each model.answers as |answer|}}
+    <p>{{answer.answer}}</p>
+  {{/each}}
+</ul>
+
+{{add-answer saveAnswer="saveAnswer" question=model}}
