@@ -6,21 +6,21 @@
       <div class="form-group">
         <label for="author" class='col-lg-2 control-label'>Author</label>
         <div class="col-lg-10">
-         {{input value=author id="author" class="form-control" placeholder="Earnest Hemmingway" }}
+         {{input value=author id="author" class="form-control" placeholder=question.author }}
         </div>
       </div>
       <div class="form-group">
         <label for="image" class='col-lg-2 control-label'>Avatar URL</label>
         <div class="col-lg-10">
-         {{input value=image id="image" class="form-control" placeholder="http://image.jpg"}}
+         {{input value=image id="image" class="form-control" placeholder= question.image}}
         </div>
       </div>
       <div class="form-group">
-        <label for="question" class="col-lg-2 control-label">Question:</label>
+        <label for="questionBody" class="col-lg-2 control-label">Question:</label>
         <div class="col-lg-10">
           <!-- {{input value=question id="question"}} -->
 
-          {{textarea input value=question id="question" cols="80" rows="6" class="form-control" placeholder="what would you like to know about?"}}
+          {{textarea input value=questionBody id="questionBody" cols="80" rows="6" class="form-control" placeholder=question.question}}
           <!-- <textarea class="form-control" rows="3" id="question">
           </textarea> -->
         </div>
@@ -28,7 +28,7 @@
       <div class="form-group">
         <label for="note" class='col-lg-2 control-label'>Notes</label>
         <div class="col-lg-10">
-         {{input value=note id="note" class="form-control" placeholder="notes"}}
+         {{input value=note id="note" class="form-control" placeholder=question.note}}
          <!-- <input type="text" class="form-control" id="inputUserName" placeholder="name"> -->
         </div>
       </div>

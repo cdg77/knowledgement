@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    updateQuestion(question, params) {
+    update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
           question.set(key, params[key]);
@@ -18,7 +18,7 @@ export default Ember.Route.extend({
 
     destroyQuestion(question) {
       question.destroyRecord();
-      this.transitionTo('question');
+      this.transitionTo('index');
     },
 
     saveAnswer(params) {
