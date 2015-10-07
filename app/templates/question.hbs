@@ -2,10 +2,10 @@
 
 <h3>{{model.question}} </h3>
 
-{{question-detail question=model}}
-{{update-question question=model updateQuestion="update"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" updateQuestion="updateQuestion"}}
+<!-- {{update-question question=model update="update"}}
 
-<button {{action 'delete' question}} class='btn btn-danger'>Delete</button>
+<button {{action 'delete' question}} class='btn btn-danger'>Delete</button> -->
 
 <h2>Answers</h2>
 <ul class='no-bull'>

@@ -3,3 +3,7 @@
 
 {{question.author}} also notes: <br><br>
 {{question.note}}
+
+{{update-question question=question update='updateQuestion'}}
+
+<button {{action 'destroyQuestion' question}} class="btn btn-danger">Delete</button>
