@@ -11,6 +11,7 @@
 <ul class='no-bull'>
   {{#each model.answers as |answer|}}
     <p>{{answer.answer}}</p>
+    <p>{{format-date answer.date_added}}</p>
   {{/each}}
 </ul>
 

@@ -5,7 +5,7 @@ hr {
 body {
 
   background-color: #414141;
-  /*color: #A7A6A6;*/
+  color: #A7A6A6;
   font-family: fantasy;
 }
 
@@ -34,4 +34,20 @@ div.well {
   background-repeat: no-repeat;
   background-color: rgba(28,30,34,0.5);
   /*color: yellow;*/
+}
+
+div.container-date > p {
+  color: yellow;
+  text-shadow: 1px 1px 2px white;
+  font-size: large;
+  padding-top: 10%;
+}
+
+footer {
+  background-color: #025C75;
+}
+
+.navbar-text > a {
+    color: gray;
+    text-decoration: none;
 }
