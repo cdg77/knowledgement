@@ -28,6 +28,10 @@ body {
 	/*-moz-border-radius: 30px;  Disabled for FF1+ */
 }
 
+span.navbar-img {
+  background-image: url(images/q-mark.png)
+}
+
 div.well {
   background-image: url(images/riddler-e-coyote.png);
   background-position: right;
